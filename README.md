@@ -1,70 +1,126 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# 🤟 Indian Sign Language to Text & Speech Translator
 
-In the project directory, you can run:
+> A real-time AI-powered system that translates **Indian Sign Language (ISL)** into **text** and **speech**, enabling inclusive communication for the specially-abled.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📌 Project Overview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This project was developed during our **6th semester (Jan–April 2025)** at **Datta Meghe College of Engineering**, Airoli, Navi Mumbai.
+It aims to help individuals who are **deaf** or **blind** by recognizing hand gestures and converting them into understandable text and speech in **real-time**.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🎯 Objective
 
-### `npm run build`
+To build a **web-based application** that:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Converts **ISL gestures** to **readable text**
+* Converts text into **spoken audio**
+* Runs efficiently with minimal latency
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 👨‍💻 Tech Stack Used
 
-### `npm run eject`
+* **TensorFlow / Keras** – CNN-based gesture recognition
+* **OpenCV** – Webcam input & image preprocessing
+* **Mediapipe** – Real-time hand tracking
+* **Flask** – Backend integration and server
+* **React.js** – Frontend user interface
+* **pyttsx3** – Offline text-to-speech conversion
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🔬 Methodology
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* **Data Collection**: Captured custom gesture dataset using webcam
+* **Preprocessing**: Converted images to grayscale, resized them
+* **Model Training**: Built and trained a CNN for 3 gesture classes
+* **Real-Time Inference**: Used Mediapipe with Flask for gesture detection and prediction
+* **Frontend Integration**: React-based UI with live output and speech feedback
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🧪 How to Run
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Clone the repository:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   git clone https://github.com/your-username/isl-to-text.git
+   cd isl-to-text
+   ```
 
-### Code Splitting
+2. Run the app:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   ```bash
+   python app.py
+   ```
 
-### Analyzing the Bundle Size
+That’s it! The project will automatically launch both backend and frontend.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 📁 Model, Dataset & node\_modules
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Due to size limitations, we’ve uploaded the following essential files on Google Drive:
 
-### Advanced Configuration
+✅ Pre-trained CNN Model (`model.h5`)
+✅ Custom ISL Gesture Dataset
+✅ Frontend `node_modules` folder
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+📥 **Download from this link:**
+https://drive.google.com/drive/folders/1aJx8pG4i4istjnWy8It_5sIzlQ6k5LDx?usp=sharing
 
-### Deployment
+> Make sure to extract and place them in the correct folders (main folder) before running the project.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 📊 Challenges Faced
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* Limited gesture dataset affected accuracy
+* Real-time gesture-to-speech integration
+* Gesture variation due to lighting, angles, and hand speed
+* Cross-browser frontend testing and responsiveness
+
+---
+
+## 🌍 Impact & Future Scope
+
+* Enables **deaf and blind** users to communicate better
+* Can scale to include **more ISL gestures**
+* Future enhancements:
+
+  * **Context-aware output** using NLP
+  * **Mobile app version**
+  * **Multiple language support**
+
+---
+
+## 👥 Team Members
+
+* Vivek Rajak
+* Soham Rane
+* Mandar Salvi
+* Vansh Wase
+
+**Guided by:**
+💡 Prof. Deepti Janjani
+
+---
+
+## 📚 References
+
+* IEEE: *Real-Time American Sign Language Recognition*
+* IEEE: *Vision-Based Sign Language Recognition using Deep CNNs*
+
+---
+
+## 🌐 Project Demo
+
+🔗 Try it out here:
+https://www.linkedin.com/in/mandarsalvi03/
+
+---
