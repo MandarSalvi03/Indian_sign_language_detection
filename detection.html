@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISL Detection - Gesture Detection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">ISL Detection</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="detection.html" class="active">Detection</a>
+                <a href="about.html">About Us</a>
+                <a href="info.html">Info</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <div class="container">
+            <div class="detection-section">
+                <h1 class="title">Gesture Detection</h1>
+                <p class="instructions">
+                    Show your hand to the camera to detect Indian Sign Language gestures. Make sure your hand is clearly visible
+                    and well-lit within the orange box.
+                </p>
+                <div id="video-container">
+                    <video id="video" autoplay playsinline></video>
+                    <div class="detection-box"></div>
+                </div>
+                <div class="controls">
+                    <button id="start-button" disabled>Start Detection</button>
+                    <button id="clear-button">Clear Letters</button>
+                </div>
+                <div class="status-container">
+                    <div id="prediction">Waiting to start...</div>
+                    <div id="detected-letters"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="GestureDetection.js"></script>
+</body>
+</html> 
